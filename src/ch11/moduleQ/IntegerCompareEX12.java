@@ -1,6 +1,6 @@
 package ch11.moduleQ;
 
-public class IntegerCompareEX {
+public class IntegerCompareEX12 {
 
 	public static void main(String[] args) {
 		Integer obj1 = 100;

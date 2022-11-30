@@ -1,10 +1,17 @@
 package Nov4.Polymorphism;
 
-public class Jururu implements Introduce{
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Jururu extends Youtube implements Introduce{
+	
+	double subRatio = 1.92;
+	int people;
+	int human;
 	
 	@Override
 	public void start() {
-		System.out.println("밍나~ 콘르르 콘르르!");
+		System.out.println("방송 시작: 밍나~ 콘르르 콘르르!");
 		
 	}
 	
@@ -25,12 +32,33 @@ public class Jururu implements Introduce{
 		System.out.println("대표곡: Ju. T'aime");
 		
 	}
-
+	
+	public String youtubeSub() {
+		Youtube yousub = new Youtube();
+		DecimalFormat df;
+		df = new DecimalFormat("#,###");
+		System.out.println("유튜브 구독자: "+ df.format((int)Math.round(youtubeSub * subRatio))+"명");
+		System.out.println("구독하시겠습니까? (Y/N)");
+		//스캐너 y/n
+		Scanner sc = new Scanner(System.in);
+		String yn = sc.nextLine();
+		if (yn.equals("y")||yn.equals("Y")) {
+			JuSub ++;
+		} else if(yn.equals("n")||yn.equals("N")) {
+			System.out.println("구독하지 않았습니다.");
+		}
+		people = (int)Math.round(youtubeSub * subRatio)+JuSub;
+		return "유튜브구독자:" + df.format(people) + "명"; 
+	}
+/*
 	@Override
 	public void youtubeSub() {
-		System.out.println("유튜브구독자: 19.2만명");
+		super.subRatio = (double) 1.92;
+		DecimalFormat df;
+		df = new DecimalFormat("#,###");
+		System.out.println("유튜브구독자: "+ df.format(Math.round(youtubeSub * subRatio)) + "명");
 		
 	}
-
+*/
 
 }

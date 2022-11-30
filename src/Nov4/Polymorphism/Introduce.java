@@ -5,5 +5,4 @@ public interface Introduce {
 	void memberName();
 	void fandom();
 	void song();
-	void youtubeSub();
 }
