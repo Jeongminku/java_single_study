@@ -51,23 +51,5 @@ public class Ine extends Youtube implements Introduce{
 		return "유튜브구독자:" + df.format(people) + "명"; 
 	
 	
-	
-	
-/*
-	@Override
-	public void youtubeSub() {
-		super.subRatio = (double) 2.47;
-		DecimalFormat df;
-		df = new DecimalFormat("#,###");
-		
-		System.out.println("유튜브구독자: "+ df.format(Math.round(youtubeSub * subRatio)) + "명");
-	
-	}
-
-	public static int youtubeSubs() {
-		return ((int) Math.round(youtubeSub * subRatio));
-	}
-*/
-	
 }
 }

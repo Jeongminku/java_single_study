@@ -7,7 +7,6 @@ public class Gosegu extends Youtube implements Introduce {
 	
 	double subRatio = 2.39;
 	int people;
-	int human;
 	
 	@Override
 	public void start() {

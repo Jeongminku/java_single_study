@@ -7,7 +7,6 @@ public class Vichan extends Youtube implements Introduce{
 	
 	double subRatio = 2.4;
 	int people;
-	int human = 0;
 	
 	@Override
 	public void start() {

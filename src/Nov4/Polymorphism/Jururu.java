@@ -7,7 +7,6 @@ public class Jururu extends Youtube implements Introduce{
 	
 	double subRatio = 1.92;
 	int people;
-	int human;
 	
 	@Override
 	public void start() {
@@ -50,15 +49,6 @@ public class Jururu extends Youtube implements Introduce{
 		people = (int)Math.round(youtubeSub * subRatio)+JuSub;
 		return "유튜브구독자:" + df.format(people) + "명"; 
 	}
-/*
-	@Override
-	public void youtubeSub() {
-		super.subRatio = (double) 1.92;
-		DecimalFormat df;
-		df = new DecimalFormat("#,###");
-		System.out.println("유튜브구독자: "+ df.format(Math.round(youtubeSub * subRatio)) + "명");
-		
-	}
-*/
+
 
 }

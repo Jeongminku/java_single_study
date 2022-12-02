@@ -7,7 +7,6 @@ public class Jingburger extends Youtube implements Introduce{
 
 	double subRatio = 2.17;
 	int people;
-	int human;
 	
 	@Override
 	public void start() {
@@ -51,15 +50,5 @@ public class Jingburger extends Youtube implements Introduce{
 		return "유튜브구독자:" + df.format(people) + "명"; 
 	}
 	
-/*
-	@Override
-	public void youtubeSub() {
-		super.subRatio = (double) 2.17;
-		DecimalFormat df;
-		df = new DecimalFormat("#,###");
-		System.out.println("유튜브구독자: "+ df.format(Math.round(youtubeSub * subRatio)) + "명");
-		
-	}
-*/
 
 }

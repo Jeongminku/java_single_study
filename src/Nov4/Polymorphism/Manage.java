@@ -36,7 +36,6 @@ public class Manage {
 		introduce.song();
 		Lilpa l = new Lilpa();
 		System.out.println(l.youtubeSub());
-		//introduce.youtubeSub();
 		
 	};
 	
@@ -49,7 +48,7 @@ public class Manage {
 		introduce.song();
 		Jururu r = new Jururu();
 		System.out.println(r.youtubeSub());
-		//introduce.youtubeSub();
+		
 		
 	};
 	
@@ -74,7 +73,6 @@ public class Manage {
 		introduce.song();
 		Vichan v = new Vichan();
 		System.out.println(v.youtubeSub());
-	//	introduce.youtubeSub();
 		
 	};
 	
